@@ -11,9 +11,14 @@ body{
 }
 .nav-bar{
     position: fixed;
-    background-color: #1679AB;
+    background: transparent;
     width: 100%;
     padding: 10px;
+}
+.navbar-on-scroll{
+    background-color: #252375;
+    box-shadow: #556876;
+    transition: 0.4s all linear;
 }
 label.logo, .nav-links-container{
     display: inline;
@@ -41,6 +46,10 @@ label.logo{
     line-height: 40px;
     text-transform: uppercase;
 }
+.nav-links a:hover, .nav-links a:active{
+    background: none;
+    color: #653412;
+}
 .checkbtn{
     font-size: 30px;
     color: #fff;
@@ -50,10 +59,273 @@ label.logo{
     cursor: pointer;
     display: none;
 }
-#check{
-    display: none;
+
+.first-container{
+    height: 711px;
+    background-image: url('images/background\ image.jpg');
+    background-size: cover;
+    padding-top: 80px;
+}
+.moto-container{
+    text-align: center;
+    padding-top: 80px;
+}
+.top-padding{
+    padding-top: 200px;
+}
+.moto{
+    font-size: 3.6em;
+    color: #fff;
+}
+.message{
+    margin-top: 20px;
+    font-size: 2.1em;
+    color: #fff;
+}
+.moto-container p{
+    margin: 10px;
+    color: #fff;
+}
+.sign-up-btn{
+    font-size: 1.5em;
+    padding: 10px;
+    width: 140px;
+    border: none;
+    background-color: #0e2d4c;
+    color: #fff;
+    border-radius: 7px;
+    margin-top: 20px;
+}
+.sign-up-btn:hover{
+    background-color: #556876;
+    color: #000;
 }
 
+.second-container{
+    height: 700px;
+    background-color: #00bf72;
+    padding: 140px 100px;
+}
+
+.second-inner-con{
+    display: flex;
+}
+.photo-container{
+    flex: 1;
+}
+.about-img{
+    border-radius: 10px;
+    transition: border 0.3s;
+}
+.about-img:hover{
+    border: 2px solid #4f655c;
+}
+.about-container{
+    flex: 1;
+}
+.abt-head{
+    font-size: 2.4em;
+    color: #fff;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+.about-paragraph{
+    color: #fff;
+    padding-bottom: 30px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.about-btn{
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 1em;
+    font-weight: 700;
+    width: 120px;
+    border-radius: 10px;
+    border: none;
+}
+.about-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+.third-container{
+    height: 700px;
+    background-color: #fff;
+}
+.third-inner-con{
+    display: flex;
+    padding: 120px 50px ;
+}
+.cards{
+    flex: 1;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: #00bf72;
+    margin: 10px 10px;
+    text-align: center;
+}
+.one{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.two{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.three{
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+}
+.desc{
+    color: #fff;
+}
+.see-more{
+    padding: 6px;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #0c5034;
+    border: none;
+    margin-top: 5px;
+}
+.see-more:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+footer{
+    height: 300px;
+    background-color: #11243a;
+    color: #fff;
+}
+.footer-container{
+    display: flex;
+    padding: 70px 100px 0 130px;
+}
+.footer-cards{
+    flex: 1;
+    margin-right: 50px;
+    padding-left: 20px;
+}
+.foot-head{
+    margin-bottom: 20px;
+}
+.footer-desc{
+    margin: 10px 0;
+}
+.foot-links{
+    text-decoration: none;
+    color: #fff;
+}
+.bx{
+    font-size: 1.7em;
+    margin-right: 5px;
+}
+/* styles for different devices */
+@media (max-width: 1300px) {
+    .second-container{
+        padding: 120px 100px;
+    }
+    .about-img{
+        width: 450px;
+        height: 430px;
+    }
+    
+    .abt-head{
+        font-size: 2.0em;
+        font-weight: 600;
+        padding-bottom: 20px;
+    }
+    .about-paragraph{
+        padding-bottom: 17px;
+        font-size: 1.0em;
+    }
+      
+}
+@media (max-width: 1160px) {
+    .second-container{
+        padding: 100px 100px;
+    }
+    .about-img{
+        width: 430px;
+        height: 410px;
+    }
+    .abt-head{
+        font-size: 1.8em;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .about-paragraph{
+        padding-bottom: 15px;
+        font-size: 1.0em;
+    }
+    .about-btn{
+        font-size: 0.9em;
+    }
+      
+}
+@media (max-width: 1120px) {
+    .moto{
+        font-size: 3.2em;
+    }
+    .message{
+        margin-top: 15px;
+        font-size: 1.9em;
+    }
+    .moto-container p{
+        margin: 8px;
+    }
+    .sign-up-btn{
+        font-size: 1.3em;
+        padding: 10px;
+        width: 130px;
+    }
+    .second-container{
+        padding: 80px 90px;
+    }
+    .about-img{
+        width: 420px;
+        height: 400px;
+    }
+    .abt-head{
+        font-size: 1.6em;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .about-paragraph{
+        padding-bottom: 10px;
+        font-size: 1em;
+    }
+    .about-btn{
+        font-size: 0.7em;
+    }
+    .about-container{
+        margin-left: 20px;
+    } 
+}
+@media (max-width: 1000px) {
+    .second-container{
+        padding: 70px 70px;
+    }
+    .abt-head{
+        font-size: 1.5em;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .about-paragraph{
+        padding-bottom: 8px;
+        font-size: 1em;
+    }
+    .about-container{
+        margin-left: 20px;
+    } 
+}
 @media (max-width: 952px) {
     label.logo{
         font-size: 30px;
@@ -61,6 +333,25 @@ label.logo{
     }
     .nav-links-container ul li a{
         font-size: 16px;
+    }
+    .about-img{
+        width: 360px;
+        height: 340px;
+    }
+    .abt-head{
+        font-size: 1.4em;
+        font-weight: 600;
+        padding-bottom: 10px;
+    }
+    .about-paragraph{
+        padding-bottom: 10px;
+        font-size: 15px;
+    }
+    .about-btn{
+        font-size: 0.7em;
+    }
+    .about-container{
+        margin-left: 20px;
     }
 }
 @media (max-width: 858px) {
@@ -71,11 +362,14 @@ label.logo{
         position: fixed;
         width: 100%;
         height: 100hv;
-        background: #2c3e50;
+        background: #242375a2;
         top: 60px;
         left: 0;
         text-align: center;
         transition: all 0.5s;
+    }
+    .nav-bar{
+        background: #242375a2;
     }
     .nav-bar ul li{
         display: block;
@@ -87,7 +381,52 @@ label.logo{
         background: none;
         color: #0082e6;
     }
-    #check:checked ~ ul{
-        left: 0;
+    .active{
+        display: none;
+    }
+    .moto-container p{
+        margin: 6px;
+        color: #fff;
+    }
+    .message{
+        font-size: 1.6em;
+    }
+    .navbar-on-scroll{
+        background-color: #11243a;
+        box-shadow: #556876;
+        transition: 0.4s all linear;
+    }
+    .nav-links-sm{
+        background-color: #11243a;
+    }
+    .sign-up-btn{
+        font-size: 1.2em;
+        width: 120px;
+    }
+    .second-container{
+        padding: 60px 200px;
+    }
+    .second-inner-con{
+        flex-direction: column;
+    }
+    .about-img{
+        width: 500px;
+        height: 450px;
+    }
+    .abt-head{
+        font-size: 1.4em;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+    .about-paragraph{
+        padding-bottom: 15px;
+        font-size: 1em;
+    }
+    .about-btn{
+        font-size: 1em;
+        width: 130px;
+    }
+    .second-container{
+        height: 1010px;
     }
 }
