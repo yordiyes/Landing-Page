@@ -257,7 +257,7 @@ footer{
         font-size: 1.1em;
     }
     .footer-container{
-        padding: 60px 10px 10px 120px;
+        padding: 60px 10px 0 120px;
     }
     .footer-cards{
         margin-right: 10px;
@@ -338,6 +338,9 @@ footer{
         padding-bottom: 17px;
         font-size: 1.0em;
     }
+    .third-container{
+        height: 570px;
+    }
       
 }
 @media (max-width: 1160px) {
@@ -383,7 +386,9 @@ footer{
     .see-more{
         font-size: 0.8em;
     }
-      
+    .third-container{
+        height: 550px;
+    }
 }
 @media (max-width: 1120px) {
     .moto{
@@ -425,6 +430,9 @@ footer{
     } 
 }
 @media (max-width: 1080px) {
+    .third-container{
+        height: 520px;
+    }
     .third-inner-con {
         padding: 40px 35px;
     }
@@ -459,14 +467,38 @@ footer{
     .about-container{
         margin-left: 20px;
     } 
+    .third-container{
+        height: 1150px;
+    }
     .third-inner-con{
         flex-wrap: wrap;
     }
     .cards{
         flex: 1 1 calc(50% - 20px) ;
+        padding: 15px;
     }
     .cards:nth-child(3){
         flex: 1 1 100%;
+        padding: 30px;
+        margin: 10px 10px;
+    }
+    .see-more:nth-child(3){
+        font-size: 1em;
+    }
+    .desc{
+        font-size: 1.2em;
+    }
+    .one{
+        width: 300px;
+        height: 300px;
+    }
+    .two{
+        width: 300px;
+        height: 300px;
+    }
+    .three{
+        width: 500px;
+        height: 500px;
     }
 }
 @media (max-width: 952px) {
@@ -500,6 +532,23 @@ footer{
         margin-left: 20px;
     }
 }
+@media (max-width: 858px) {
+    footer{
+        height: 505px;
+    }
+    .footer-container{
+        flex-wrap: wrap;
+    }
+    .footer-cards{
+        flex: 1 1 calc(50% - 20px) ;
+        padding: 30px;
+    }
+    .about-img{
+        width: 500px;
+        height: 490px;
+    }
+}
+
 @media (max-width: 858px) {
     .checkbtn{
         display: block;
@@ -559,9 +608,8 @@ footer{
     .photo-container{
         margin-bottom: 10px;
     }
-    .about-img{
-        width: 500px;
-        height: 450px;
+    .second-container {
+        padding: 60px 180px;
     }
     .abt-head{
         font-size: 1.4em;
@@ -575,5 +623,79 @@ footer{
     .about-btn{
         font-size: 1em;
         width: 130px;
+    }
+    .third-inner-con{
+        flex-direction: column;
+    }
+    .cards{
+        padding: 30px;
+    }
+    .see-more{
+        font-size: 1em;
+    }
+    .desc{
+        font-size: 1.2em;
+    }
+    .one{
+        width: 500px;
+        height: 500px;
+    }
+    .two{
+        width: 500px;
+        height: 500px;
+    }
+    .third-container{
+        height: 2050px;
+    }
+}
+@media (max-width: 825px){
+    .about-paragraph{
+            font-size: 1em;
+    }
+    .about-img{
+        height: 400px;
+        width: 450px;
+    }
+    .second-container {
+        padding: 60px 180px;
+    }
+}
+@media (max-width: 760px){
+    .about-img{
+        width: 420px;
+    }
+    .footer-cards:nth-child(3){
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 730px){
+    .about-img{
+        width: 410px;
+    }
+    .one{
+        width: 480px;
+        height: 480px;
+    }
+    .two{
+        width: 480px;
+        height: 480px;
+    }
+    .three{
+        width: 480px;
+        height: 480px;
+    }
+    .third-container{
+        height: 2050px;
+    }
+    .second-container {
+        padding: 60px 160px;
+    }
+    .footer-cards{
+        padding-bottom: 0;
+    }
+} 
+@media (max-width: 700px) {
+    .second-container{
+        height: 1045px;
     }
 }
