@@ -24,11 +24,19 @@ label.logo, .nav-links-container{
     display: inline;
 }
 label.logo{
-    color: #fff;
     font-size: 1.8em;
     font-weight: 700;
     padding: 0 100px;
     line-height: 40px;
+}
+label.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+.logo-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 12px;
 }
 .nav-links-container{
     float: right;
@@ -472,7 +480,7 @@ footer{
         margin-left: 20px;
     } 
     .third-container{
-        height: 1150px;
+        height: 1200px;
     }
     .third-inner-con{
         flex-wrap: wrap;
@@ -517,6 +525,9 @@ footer{
         width: 360px;
         height: 340px;
     }
+    .about-container{
+        margin-left: 10px;
+    }
     .abt-head{
         font-size: 1.4em;
         font-weight: 600;
@@ -532,8 +543,8 @@ footer{
     .about-btn{
         font-size: 0.8em;
     }
-    .about-container{
-        margin-left: 20px;
+    footer{
+        height: 339px;
     }
 }
 @media (max-width: 890px){
@@ -544,7 +555,7 @@ footer{
         padding: 0;
     }
 }
-@media (max-width: 858px) {
+@media (max-width: 866px) {
     .checkbtn{
         display: block;
     }
@@ -643,7 +654,7 @@ footer{
         height: 2060px;
     }
     footer{
-        height: 505px;
+        height: 495px;
     }
     .footer-container{
         flex-wrap: wrap;
@@ -677,7 +688,7 @@ footer{
         padding-bottom: 0;
     }
 }
-@media (max-width: 730px){
+@media (max-width: 745px){
     .about-img{
         width: 410px;
     }
@@ -693,21 +704,162 @@ footer{
         width: 480px;
         height: 480px;
     }
-    .second-container{
-        height: 1040px;
-    }
     .third-container{
         height: 2050px;
     }
     .second-container {
         padding: 60px 160px;
+        height: 1040px;
     }
     .footer-cards{
         padding-bottom: 0;
     }
 } 
 @media (max-width: 700px) {
+    .moto{
+        font-size: 2.6em;
+    }
+    .message {
+        font-size: 1.3em;
+    }
+    .moto-container p {
+        font-size: 17px;
+    }
+    .checkbtn{
+        font-size: 29px;
+    }
+    label.logo{
+        font-size: 27px;
+    }
+    .logo-img{
+        width: 28px;
+        height: 28px;
+    }
     .second-container{
-        height: 1045px;
+        height: 1060px;
+        padding: 60px 140px;
+    }
+    .about-img{
+        width: 370px;
+    }
+    .one{
+        width: 480px;
+        height: 480px;
+    }
+    .two{
+        width: 480px;
+        height: 480px;
+    }
+    .three{
+        width: 480px;
+        height: 480px;
+    }
+    .third-container{
+        height: 2050px;
+    }
+    .footer-cards{
+        padding-bottom: 0;
+    }
+}
+@media (max-width: 658px) {
+    .second-container{
+        height: 1070px;
+        padding: 50px 120px;
+    }
+    footer {
+        height: 540px;
+    }
+}
+@media (max-width: 595px) {
+    .about-img{
+        width: 320px;
+        height: 320px;
+    }
+    .second-container{
+        height: 1100px;
+    }
+    .third-inner-con {
+        padding: 40px 10px;
+    }
+    .one{
+        width: 450px;
+        height: 450px;
+    }
+    .two{
+        width: 450px;
+        height: 450px;
+    }
+    .three{
+        width: 450px;
+        height: 450px;
+    }
+    .third-container{
+        height: 2020px;
+    }
+}
+
+@media (max-width: 569px){
+    .moto{
+        font-size: 2.3em;
+    }
+    .message {
+        font-size: 1.1em;
+    }
+    .moto-container p {
+        font-size: 15px;
+    }
+    footer {
+        height: 590px;
+    }
+    .second-container{
+        height: 1150px;
+    }
+    .one{
+        width: 410px;
+        height: 410px;
+    }
+    .two{
+        width: 410px;
+        height: 410px;
+    }
+    .three{
+        width: 410px;
+        height: 410px;
+    }
+    .third-inner-con {
+        padding: 30px 5px;
+    }
+}
+@media (max-width: 544px){
+    footer {
+        height: 650px;
+    }
+}
+
+@media (max-width: 510px){
+    .second-container{
+        height: 1220px;
+    }    
+    .about-img{
+        width: 230px;
+        height: 230px;
+    }
+    .one {
+        width: 370px;
+        height: 370px;
+    }
+    .two {
+        width: 370px;
+        height: 370px;
+    }
+    .three {
+        width: 370px;
+        height: 370px;
+    }
+    .desc {
+        font-size: 1em;
+    }
+    footer{
+        height: 750px;
     }
 }
