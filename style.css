@@ -96,6 +96,7 @@ label.logo a{
 }
 .sign-up-btn{
     font-size: 1.5em;
+    font-weight: 700;
     padding: 10px;
     width: 140px;
     border: none;
@@ -105,7 +106,7 @@ label.logo a{
     margin-top: 20px;
 }
 .sign-up-btn:hover{
-    background-color: #556876;
+    background-color: #b6c2cb;
     color: #000;
 }
 
@@ -161,7 +162,7 @@ label.logo a{
 
 /* third container  styles */
 .third-container{
-    height: 700px;
+    height: 730px;
     background-color: #fff;
 }
 .third-inner-con{
@@ -175,6 +176,10 @@ label.logo a{
     background-color: #00bf72;
     margin: 10px 10px;
     text-align: center;
+    transition: all 0.4s linear;
+}
+.cards:hover{
+    box-shadow: 4px 4px 4px rgb(0,0 , 0.32);
 }
 .one{
     width: 400px;
@@ -199,7 +204,7 @@ label.logo a{
     font-size: 1em;
     font-weight: 700;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 5px;
     color: #0c5034;
     border: none;
     margin-top: 5px;
